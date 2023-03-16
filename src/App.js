@@ -2,12 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  
   return (
 
     <div className="Container">
       <header className="App-header">
       <nav>
-            <label class="logo"><a href="#">Verkkokauppa</a></label>
+            <label class="logo">Verkkokauppa</label>
             <button type="button" id="hamburger" onclick="hideNav()"><i class="fa-solid fa-bars fa-xl"></i></button>
             <div id="navi" class="hide"></div>
         <ul>

@@ -16,6 +16,8 @@ nav {
   background-color: rgb(23, 189, 84);
   height: 80px;
   width: 100%;
+  position: absolute;
+  top: 0px;
 }
 label.logo {
   color: rgb(255, 255, 255);
@@ -25,7 +27,7 @@ label.logo {
   font-weight: bold;
 }
 nav ul {
-  background-color: #00311f;
+  background-color: #15d38e;
   justify-content: right;
 }
 nav ul li {
