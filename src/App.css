@@ -27,6 +27,17 @@
 .App-link {
   color: #61dafb;
 }
+.btn{
+  position: absolute;
+  right: 0px;
+  background-color: orange;
+}
+
+.dropdown-menu{
+  background-color:#61dafb;
+  width: 100vw;
+  
+}
 
 @keyframes App-logo-spin {
   from {

@@ -8,14 +8,18 @@ function App() {
     <div className="Container">
       <header className="App-header">
       <nav>
+      <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Pelit</a></li>
+              <li><a class="dropdown-item" href="#">Konsolit</a></li>
+              <li><a class="dropdown-item" href="#">Keräilyesineet</a></li>
+            </ul>
+          </div>
             <label class="logo">Verkkokauppa</label>
-            <button type="button" id="hamburger" onclick="hideNav()"><i class="fa-solid fa-bars fa-xl"></i></button>
-            <div id="navi" class="hide"></div>
-        <ul>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Retro</a></li>
-            <li><a href="#">Collector items</a></li>
-        </ul>
+            
         </nav>
       </header>
       

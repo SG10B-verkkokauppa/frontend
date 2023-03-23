@@ -68,3 +68,8 @@ a.active, a:hover {
 #smaller {
   size: 200px;
 }
+
+.container{
+  height: 100vh;
+  background-color: blue;
+}
