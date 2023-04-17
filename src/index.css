@@ -12,13 +12,6 @@ code {
     monospace;
 }
 
-nav {
-  background-color: rgb(23, 189, 84);
-  height: 80px;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-}
 label.logo {
   color: rgb(255, 255, 255);
   font-size: 35px;
@@ -26,10 +19,7 @@ label.logo {
   padding: 0 100px;
   font-weight: bold;
 }
-nav ul {
-  background-color: #15d38e;
-  justify-content: right;
-}
+
 nav ul li {
   display: inline-block;
   line-height: 80px;
@@ -70,6 +60,5 @@ a.active, a:hover {
 }
 
 .container{
-  height: 100vh;
-  background-color: blue;
+   
 }
