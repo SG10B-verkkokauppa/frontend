@@ -22,7 +22,7 @@ export default function Navbar(){
               <Link className="nav-link" to="/contactus">Contact Us</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link disabled">Products</a>
               </li>
             </ul>
           </div>

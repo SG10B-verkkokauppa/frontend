@@ -34,8 +34,9 @@ nav ul li a {
   border: rgb(0, 0, 0);
 }
 a.active, a:hover {
-  background-color: rgb(122, 0, 0);
+  background-color: rgb(82, 0, 0);
   transition: 0.5s;
+  border-radius: 5px;
 }
 #hamburger {
   padding: 10px;
@@ -70,7 +71,7 @@ a.active, a:hover {
 }
 #carousel{
   width: 300px;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 .product{
   padding: 50px;
@@ -83,4 +84,12 @@ a.active, a:hover {
   display: inline-block;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+}
+
+.navbar-nav{
+  --bs-nav-link-color:white;
+}
+.nav-link.a.active ,.nav-link.a:hover{
+  height: 190px;
+  background-color:white;
 }
