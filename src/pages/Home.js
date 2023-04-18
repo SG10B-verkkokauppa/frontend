@@ -4,7 +4,7 @@ import pic1 from './Avaruus.jpg';
 
 export default function Home(){
     return (
-     <> 
+     <div class="home"> 
       <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -13,7 +13,7 @@ export default function Home(){
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src={pic1} class="d-block w-100" alt="pic1" />
+      <img src={pic1} class="d-block w-100" alt="pic1" id="carousel" />
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
@@ -44,6 +44,6 @@ export default function Home(){
     </button>
     </div>
     
-  </>
+  </div>
     );
 }

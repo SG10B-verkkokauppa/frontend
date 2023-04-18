@@ -34,7 +34,7 @@ nav ul li a {
   border: rgb(0, 0, 0);
 }
 a.active, a:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(122, 0, 0);
   transition: 0.5s;
 }
 #hamburger {
@@ -58,4 +58,15 @@ a.active, a:hover {
 #smaller {
   size: 200px;
 }
-
+#nav{
+  background-color: #6D0C0C!important;
+}
+#logo{
+  height: 100px;
+}
+#root{
+  background-color:chartreuse;
+}
+#carousel{
+  height: 300px;
+}
