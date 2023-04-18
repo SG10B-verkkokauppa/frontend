@@ -60,13 +60,18 @@ a.active, a:hover {
 }
 #nav{
   background-color: #6D0C0C!important;
+  border-radius: 5px;
 }
 #logo{
   height: 100px;
 }
 #root{
-  background-color:chartreuse;
+  background-color:#F96943;
 }
 #carousel{
-  height: 300px;
+  width: 300px;
+  border-radius: 5px;
+}
+.product{
+  padding: 50px;
 }

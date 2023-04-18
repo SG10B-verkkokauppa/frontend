@@ -43,7 +43,12 @@ export default function Home(){
       <span class="visually-hidden">Next</span>
     </button>
     </div>
-    
+    <div class="product">
+      <div class="1stproduct"></div>
+      <div class="2ndproduct"></div>
+      <div class="3rdproduct"></div>
+      <div class="4thproduct"></div>
+    </div>
   </div>
     );
 }
