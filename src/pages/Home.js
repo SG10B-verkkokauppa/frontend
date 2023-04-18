@@ -2,8 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom";
 import pic1 from './alennus.png';
 import pic2 from './Avaruus.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+
 
 export default function Home(){
     return (
