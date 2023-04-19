@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "react-router-dom";
-import pic1 from './Avaruus.jpg';
+import pic1 from './alennus.png';
+import pic2 from './Avaruus.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 export default function Home(){
     return (
@@ -15,22 +18,22 @@ export default function Home(){
     <div class="carousel-item active">
       <img src={pic1} class="d-block w-100" alt="pic1" id="carousel" />
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5 class="black">Aukaisu Ale!</h5>
+        <p class="black">Uusi ps5 -20% alennuksella.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src={pic1} class="d-block w-100" alt="pic1" />
+      <img src={pic2} class="d-block w-100" alt="pic2" />
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5 class="black">placeholder</h5>
+        <p class="black">Some representative placeholder content for the second slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src={pic1} class="d-block w-100" alt="pic1" />
+      <img src={pic2} class="d-block w-100" alt="pic2" />
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5 class="black">Third slide label</h5>
+        <p class="black">Some representative placeholder content for the third slide.</p>
       </div>
     </div>
   </div>
@@ -43,6 +46,22 @@ export default function Home(){
       <span class="visually-hidden">Next</span>
     </button>
     </div>
+    <div class="container text-center">
+  <div class="row product">
+      <div class="col-md">
+        <Link className="nav-link" to="/konsolit"><i class="fa-solid fa-gamepad fa-2xl"></i> Konsolit</Link>
+      </div>
+      <div class="col-md">
+        <Link className="nav-link" to="/pelit"><i class="fa-solid fa-compact-disc fa-2xl"></i> Pelit</Link>
+      </div>
+      <div class="col-md">
+       <Link className="nav-link" to="/lautapelit"><i class="fa-solid fa-chess fa-2xl"></i> Lautapelit</Link>
+      </div>
+      <div class="col-md">
+        <Link className="nav-link" to="/oheistuotteet"><i class="fa-solid fa-mug-saucer fa-2xl"></i> Oheistuotteet</Link>
+      </div>
+    </div>
+  </div>
     <div class="product">
       <div class="1stproduct"></div>
       <div class="2ndproduct"></div>
