@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom";
 import pic1 from './alennus.png';
 import pic2 from './Avaruus.jpg';
+import pic3 from './Kova.png';
 
 
 export default function Home(){
@@ -29,10 +30,10 @@ export default function Home(){
       </div>
     </div>
     <div class="carousel-item">
-      <img src={pic2} class="d-block w-100" alt="pic2" />
+      <img src={pic3} class="d-block w-100" alt="pic3" />
       <div class="carousel-caption d-none d-md-block">
         <h5 class="black">Third slide label</h5>
-        <p class="black">Some representative placeholder content for the third slide.</p>
+        <p class="black">Coding experience in 2023</p>
       </div>
     </div>
   </div>
