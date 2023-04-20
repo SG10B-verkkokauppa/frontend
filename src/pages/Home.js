@@ -23,7 +23,7 @@ export default function Home(){
       </div>
     </div>
     <div class="carousel-item">
-      <img src={pic2} class="d-block w-100" alt="pic2" />
+      <img src={pic1} class="d-block w-100" alt="pic1" />
       <div class="carousel-caption d-none d-md-block">
         <h5 class="black">placeholder</h5>
         <p class="black">Some representative placeholder content for the second slide.</p>
