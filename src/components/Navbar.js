@@ -38,6 +38,10 @@ export default function Navbar(){
               <li class="nav-item">
                 <a class="nav-link disabled">Products</a>
               </li>
+              <li class="nav-item">
+              <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+              </li>
+              
             </ul>
           </div>
         </div>

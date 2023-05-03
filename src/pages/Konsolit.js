@@ -19,7 +19,7 @@ export default function Konsolit(){
         </div>
         <div class="col-md-3">
           <div className="Product border">
-            <img src={product6} className="productimg"></img>
+            <img src={product6} className="productimg"></img><br></br>
             <label>Name:Switch</label>
             <p>Price:300€</p>
           </div>
