@@ -18,8 +18,8 @@ export default function Lautapelit(){
         <div class="col-md-3">
           <div className="Product border">
             <img src={product2} className="productimg"></img>
-            <label>Name:Scrabble</label>
-            <p>Price:28,99€</p>
+            <label>Name:Playstation 5</label>
+            <p>Price:600€</p>
           </div>
         </div>
         <div class="col-md-3">
