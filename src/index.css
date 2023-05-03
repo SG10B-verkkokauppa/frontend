@@ -93,3 +93,16 @@ a.active, a:hover {
   height: 190px;
   background-color:white;
 }
+
+.productimg{
+  height: 150px;
+}
+
+.border{
+  border: 5px solid rgb(117, 3, 3)!important;
+  padding: 5px;
+}
+
+.product{
+  
+}

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import product1 from "./images/amiibolink.png"
 
 export default function Pelit(){
     return (
