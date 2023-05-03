@@ -19,7 +19,21 @@ export default function Navbar(){
               <Link className="nav-link" to="/about">About</Link>
               </li>
               <li class="nav-item">
-              <Link className="nav-link disabled" >placeholder</Link>
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tuoteryhmät
+                </button>
+              <ul class="dropdown-menu">
+              <li><Link className="dropdownlink" to="/konsolit"><i class="fa-solid fa-gamepad fa-2xl"></i> Konsolit</Link></li><p></p>
+              <li><Link className="dropdownlink" to="/pelit"><i class="fa-solid fa-compact-disc fa-2xl"></i> Pelit</Link></li><p></p>
+              <li><Link className="dropdownlink" to="/lautapelit"><i class="fa-solid fa-chess fa-2xl"></i> Lautapelit</Link></li><p></p>
+              <li><Link className="dropdownlink" to="/oheistuotteet"><i class="fa-solid fa-mug-saucer fa-2xl"></i> Oheistuotteet</Link></li>
+              <li><hr class="dropdown-divider" ></hr></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+              </div>
+
+              
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled">Products</a>
