@@ -5,7 +5,11 @@ export default function Oheistuotteet(){
     return (
     <div className="Container">
       
-      <p>Muutama oheistuote</p>
+      <div className="Product">
+        <img src={product1} className="productimg"></img>
+        <p>Name:Playstation 5</p><br></br>
+        <p>Price:600€</p>
+      </div>
     </div>
     );
 }

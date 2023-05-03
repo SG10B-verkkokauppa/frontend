@@ -5,7 +5,11 @@ export default function Pelit(){
     return (
     <div className="Container">
       
-      <p>Muutama peli</p>
+      <div className="Product">
+        <img src={product1} className="productimg"></img>
+        <p>Name:Playstation 5</p><br></br>
+        <p>Price:600€</p>
+      </div>
     </div>
     );
 }
