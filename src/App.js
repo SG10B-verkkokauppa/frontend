@@ -14,6 +14,7 @@ import Konsolit from './pages/Konsolit';
 import Lautapelit from './pages/Lautapelit';
 import Pelit from './pages/Pelit';
 import Oheistuotteet from './pages/Oheistuotteet';
+import Order from './pages/Order';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/lautapelit' element={<Lautapelit />}></Route>
           <Route path='/pelit' element={<Pelit />}></Route>
           <Route path='/oheistuotteet' element={<Oheistuotteet />}></Route>
+          <Route path='/Order' element={<Order />}></Route>
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
       </div>
