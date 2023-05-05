@@ -23,7 +23,7 @@ export default function Konsolit({categoryid}) {
           <div className="productcard">
           <h2>{product.name}</h2>
           <div className="productimage">
-            <img src={product.image}></img>
+            <img src={"http://localhost:3000/" + product.image} className="productimg"></img>
           </div>
           <p>{product.price} €</p>
           <br></br>

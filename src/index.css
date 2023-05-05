@@ -104,3 +104,6 @@ a.active, a:hover {
   border-radius: 5px;
   padding: 10px;
 }
+.productimage{
+  width: 150px;
+}
