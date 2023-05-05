@@ -14,6 +14,9 @@ import Konsolit from './pages/Konsolit';
 import Lautapelit from './pages/Lautapelit';
 import Pelit from './pages/Pelit';
 import Oheistuotteet from './pages/Oheistuotteet';
+import Tuotteet from './pages/Tuotteet';
+
+const URL = "http://localhost/webshop/"
 
 function App() {
   return (
@@ -26,6 +29,7 @@ function App() {
           <Route path='/about' element={<About />}></Route>
           <Route path='/contactus' element={<ContactUs />}></Route>
           <Route path='/konsolit' element={<Konsolit />}></Route>
+          <Route path='/products/:id' element={<Tuotteet />}></Route>
           <Route path='/lautapelit' element={<Lautapelit />}></Route>
           <Route path='/pelit' element={<Pelit />}></Route>
           <Route path='/oheistuotteet' element={<Oheistuotteet />}></Route>

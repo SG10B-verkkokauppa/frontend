@@ -1,8 +1,24 @@
-import React from "react"
+import React,{useState, useEffect} from "react"
 import { Link } from "react-router-dom";
 import logo from "./Image.jpg"
+import axios from "axios";
 
 export default function Navbar(){
+const [categories, setCategories] = useState([]);
+const url = "http://localhost/webshop/"
+
+useEffect(() => {
+  console.log(url);
+  axios.get(url + "products/getcategories.php")
+  .then((response) => {
+    const json = response.data;
+    setCategories(json);
+    console.log(json)
+  }).catch (error => {
+    alert(error.response === undefined ? error : error.response.data.error);
+  })
+}, [])
+
     return (
         <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
         <div class="container-fluid">
@@ -18,11 +34,20 @@ export default function Navbar(){
               <li class="nav-item">
               <Link className="nav-link" to="/about">About</Link>
               </li>
-              <li class="nav-item">
-              <Link className="nav-link disabled" >placeholder</Link>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Products</a>
+
+              <li class="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="dropdown01"
+                data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                <ul className="dropdown-menu" aria-labelledby="dropdown01">
+                  {categories.map(category => (
+                    <li>
+                      <Link
+                      className="dropdown-item"
+                      to={"/products/" + category.id}>{category.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </li>
             </ul>
           </div>
