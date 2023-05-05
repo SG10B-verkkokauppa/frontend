@@ -98,3 +98,9 @@ a.active, a:hover {
   border: 5px solid #6D0C0C!important;
   padding: 5px;
 }
+.productcard{
+  background-color: #ffffff;
+  border: 5px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+}

@@ -1,8 +1,25 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { Link } from "react-router-dom";
 import logo from "./Image.jpg"
+import axios from "axios";
 
 export default function Navbar(){
+    const [categories, setCategories] = useState([]);
+    const url = "http://localhost/webshop/"
+    
+    useEffect(() => {
+      console.log(url);
+      axios.get(url + "products/getcategories.php")
+      .then((response) => {
+        const json = response.data;
+        setCategories(json);
+        console.log(json)
+      }).catch (error => {
+        alert(error.response === undefined ? error : error.response.data.error);
+      })
+    }, [])
+
+
     return (
         <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
         <div class="container-fluid">
@@ -24,19 +41,20 @@ export default function Navbar(){
                   Tuoteryhmät
                 </button>
               <ul class="dropdown-menu">
-              <li><Link className="dropdownlink" to="/konsolit"><i class="fa-solid fa-gamepad fa-2xl"></i> Konsolit</Link></li><p></p>
-              <li><Link className="dropdownlink" to="/pelit"><i class="fa-solid fa-compact-disc fa-2xl"></i> Pelit</Link></li><p></p>
-              <li><Link className="dropdownlink" to="/lautapelit"><i class="fa-solid fa-chess fa-2xl"></i> Lautapelit</Link></li><p></p>
-              <li><Link className="dropdownlink" to="/oheistuotteet"><i class="fa-solid fa-mug-saucer fa-2xl"></i> Oheistuotteet</Link></li>
+              {categories.map(category => (
+                    <li>
+                      <Link
+                      className="dropdown-item"
+                      to={"/products/" + category.id}>{category.name}
+                      </Link>
+                    </li>
+                  ))}
               <li><hr class="dropdown-divider" ></hr></li>
               <li><a class="dropdown-item" href="#">Separated link</a></li>
               </ul>
               </div>
 
               
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Products</a>
               </li>
               <li class="nav-item">
               <Link className="dropdownlink" to="/order"><i class="fa-solid fa-cart-shopping fa-2xl"></i></Link>

@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom";
 import pic1 from './alennus.png';
-import pic2 from './Avaruus.jpg';
 import pic3 from './Kova.png';
 
 

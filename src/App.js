@@ -15,6 +15,9 @@ import Lautapelit from './pages/Lautapelit';
 import Pelit from './pages/Pelit';
 import Oheistuotteet from './pages/Oheistuotteet';
 import Order from './pages/Order';
+import Tuotteet from './pages/Tuotteet';
+
+const URL = "http://localhost/webshop/"
 
 function App() {
   return (
@@ -32,6 +35,7 @@ function App() {
           <Route path='/oheistuotteet' element={<Oheistuotteet />}></Route>
           <Route path='/Order' element={<Order />}></Route>
           <Route path='*' element={<NotFound />}></Route>
+          <Route path='/products/:id' element={<Tuotteet />}></Route>
         </Routes>
       </div>
       <Footer />
