@@ -44,12 +44,13 @@ export default function Konsolit({ categoryid }) {
               ))}</div>
           </div>
           <div class="col">
-            <div class="p-3"><ShoppingCart cart={cart} /></div>
+            <ShoppingCart cart={cart} setCart={setCart} />
           </div>
         </div>
       </div>
-
-
     </div>
+
+
+
   );
 }
