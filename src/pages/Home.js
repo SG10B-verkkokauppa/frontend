@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react"
 import { Link } from "react-router-dom";
 import pic1 from './alennus.png';
-import pic3 from './Kova.png';
-import pic2 from './scrabblesale.png'
+import pic3 from './AmiiboLuigisale.png';
+import pic2 from './scrabblesale.png';
 import axios from "axios";
 
 export default function Home(){
@@ -40,15 +40,15 @@ export default function Home(){
     <div class="carousel-item">
       <img src={pic2} class="d-block w-100" alt="pic2" />
       <div class="carousel-caption d-none d-md-block">
-        <h5 class="black">Aukaisi Ale!</h5>
+        <h5 class="black">Aukaisu Ale!</h5>
         <p class="black">Klassikko scrabble alennus nyt -50%.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src={pic3} class="d-block w-100" alt="pic3" />
       <div class="carousel-caption d-none d-md-block">
-        <h5 class="black">Third slide label</h5>
-        <p class="black">Coding experience in 2023</p>
+        <h5 class="black">Aukaisu Ale!</h5>
+        <p class="black">Huonompi veli alennus nyt -33%.</p>
       </div>
     </div>
   </div>
