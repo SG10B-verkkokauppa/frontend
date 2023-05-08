@@ -57,7 +57,7 @@ export default function Navbar(){
               
               </li>
               <li class="nav-item">
-              <Link className="dropdownlink" to="/order"><i class="fa-solid fa-cart-shopping fa-2xl"></i></Link>
+              <Link className="dropdownlink" to="/shoppingcart"><i class="fa-solid fa-cart-shopping fa-2xl"></i></Link>
               </li>
               
             </ul>
