@@ -38,12 +38,7 @@ export default function Konsolit({ categoryid }) {
           </div>
         </div>
       ))}
-      <ShoppingCart cart={cart} />
+      <ShoppingCart cart={cart} setCart={setCart} />
     </div>
   );
 }
-
-
-
-
-
