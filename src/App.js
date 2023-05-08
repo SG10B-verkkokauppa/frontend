@@ -17,6 +17,7 @@ import Oheistuotteet from './pages/Oheistuotteet';
 import Order from './pages/Order';
 import Tuotteet from './pages/Tuotteet';
 import Cart from './pages/ShoppingCart';
+import Admin from './pages/Admin';
 
 const URL = "http://localhost/webshop/"
 
@@ -37,6 +38,7 @@ function App() {
           <Route path='/ShoppingCart' element={<Cart />}></Route>
           <Route path='*' element={<NotFound />}></Route>
           <Route path='/products/:id' element={<Tuotteet />}></Route>
+          <Route path='/admin' element={<Admin></Admin>}></Route>
         </Routes>
       </div>
       <Footer />

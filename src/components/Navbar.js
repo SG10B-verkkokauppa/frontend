@@ -50,15 +50,13 @@ export default function Navbar(){
                     </li>
                   ))}
               <li><hr class="dropdown-divider" ></hr></li>
-              <li><a class="dropdown-item" href="#">Separated link</a></li>
+              <li><Link className="nav-link" to="/admin">Admin</Link></li>
               </ul>
               </div>
 
               
               </li>
-              <li class="nav-item">
-              <Link className="dropdownlink" to="/shoppingcart"><i class="fa-solid fa-cart-shopping fa-2xl"></i></Link>
-              </li>
+              
               
             </ul>
           </div>
