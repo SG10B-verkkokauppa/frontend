@@ -24,21 +24,32 @@ export default function Konsolit({ categoryid }) {
   return (
     <div className="Container">
       <h1>Oheistuotteet:</h1>
-      {products.map((product) => (
-        <div key={product.id}>
-          <div className="productcard">
-            <h2>{product.name}</h2>
-            <div className="productimage">
-              <img src={"http://localhost:3000/" + product.image} className="productimg" alt={product.name}></img>
-            </div>
-            <p>{product.price} €</p>
-            <br></br>
-            <p>{product.description}</p>
-            <button onClick={() => handleAddToCart(product)}>Lisää ostoskoriin</button>
+      <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="p-3">
+              {products.map((product) => (
+                <div key={product.id}>
+                  <div className="productcard">
+                    <h2>{product.name}</h2>
+                    <div className="productimage">
+                      <img src={"http://localhost:3000/" + product.image} className="productimg" alt={product.name}></img>
+                    </div>
+                    <p>{product.price} €</p>
+                    <br></br>
+                    <p>{product.description}</p>
+                    <button onClick={() => handleAddToCart(product)}>Lisää ostoskoriin</button>
+                  </div>
+                </div>
+              ))}</div>
+          </div>
+          <div class="col">
+            <div class="p-3"><ShoppingCart cart={cart} /></div>
           </div>
         </div>
-      ))}
-      <ShoppingCart cart={cart} />
+      </div>
+
+
     </div>
   );
 }
