@@ -23,7 +23,7 @@ export default function Konsolit({ categoryid }) {
 
   return (
     <div className="Container">
-      <h1>Oheistuotteet:</h1>
+      <h1>Videopelit:</h1>
       <div class="container px-4 text-center">
         <div class="row gx-5">
           <div class="col">
