@@ -1,10 +1,25 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { Link } from "react-router-dom";
 import pic1 from './alennus.png';
 import pic3 from './Kova.png';
-
+import axios from "axios";
 
 export default function Home(){
+  const url = "http://localhost/webshop/";
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    console.log(url);
+    axios.get(url + "products/getcategories.php")
+    .then((response) => {
+      const json = response.data;
+      setCategories(json);
+      console.log(json)
+    }).catch (error => {
+      alert(error.response === undefined ? error : error.response.data.error);
+    })
+  }, [])
+
     return (
      <div class="home"> 
       <div id="carouselExampleCaptions" class="carousel slide">
@@ -46,27 +61,17 @@ export default function Home(){
     </button>
     </div>
     <div class="container text-center">
-  <div class="row product">
-      <div class="col-md">
-        <Link className="nav-link" to="/konsolit"><i class="fa-solid fa-gamepad fa-2xl"></i> Konsolit</Link>
-      </div>
-      <div class="col-md">
-        <Link className="nav-link" to="/pelit"><i class="fa-solid fa-compact-disc fa-2xl"></i> Pelit</Link>
-      </div>
-      <div class="col-md">
-       <Link className="nav-link" to="/lautapelit"><i class="fa-solid fa-chess fa-2xl"></i> Lautapelit</Link>
-      </div>
-      <div class="col-md">
-        <Link className="nav-link" to="/oheistuotteet"><i class="fa-solid fa-mug-saucer fa-2xl"></i> Oheistuotteet</Link>
-      </div>
+    <br></br>
+  <div class="col-md">
+  {categories.map(category => (
+                      <Link
+                      className="nav-link"
+                      to={"/products/" + category.id}>{category.name} 
+                      </Link>
+                  ))}
     </div>
   </div>
-    <div class="product">
-      <div class="1stproduct"></div>
-      <div class="2ndproduct"></div>
-      <div class="3rdproduct"></div>
-      <div class="4thproduct"></div>
-    </div>
+  <br></br>
   </div>
     );
 }
