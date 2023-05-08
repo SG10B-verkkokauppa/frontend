@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react"
 import { Link } from "react-router-dom";
 import pic1 from './alennus.png';
 import pic3 from './Kova.png';
+import pic2 from './scrabblesale.png'
 import axios from "axios";
 
 export default function Home(){
@@ -37,10 +38,10 @@ export default function Home(){
       </div>
     </div>
     <div class="carousel-item">
-      <img src={pic1} class="d-block w-100" alt="pic1" />
+      <img src={pic2} class="d-block w-100" alt="pic2" />
       <div class="carousel-caption d-none d-md-block">
-        <h5 class="black">placeholder</h5>
-        <p class="black">Some representative placeholder content for the second slide.</p>
+        <h5 class="black">Aukaisi Ale!</h5>
+        <p class="black">Klassikko scrabble alennus nyt -50%.</p>
       </div>
     </div>
     <div class="carousel-item">
